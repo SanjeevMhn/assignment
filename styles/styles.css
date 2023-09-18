@@ -29,6 +29,7 @@
 	outline: none;
 	border: none;
 	background: unset;
+	text-decoration: none;
 }
 
 .btn-primary{
@@ -42,6 +43,27 @@
 	text-align: center;
 	min-width: 345px;
 	cursor: pointer;
+}
+
+.icon-container,
+.icon-container-md{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-container-md{
+	height: 70px;
+	width: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icon-container-md img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
 }
 
 .img-container-md{
@@ -80,12 +102,28 @@
 
 }
 
+.workout-start{
+	min-height: 512px;
+}
+
+.workout-start .video-player-btn{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 .workout-intro .workout-actions{
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 	display: inline-flex;
 	margin-left: auto;
+}
+
+.workout-start .workout-actions{
+	margin-right: auto;
+	margin-left: 0;
 }
 
 .workout-intro .workout-actions .action-link{
